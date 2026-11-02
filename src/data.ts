@@ -1,0 +1,177 @@
+export type Article = {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  district: string;
+  date: string;
+  image: string;
+  likes: number;
+  comments: number;
+  views: string;
+  author: string;
+};
+
+export const districts = [
+  'Ariyalur',
+  'Chengalpattu',
+  'Chennai',
+  'Coimbatore',
+  'Cuddalore',
+  'Dharmapuri',
+  'Dindigul',
+  'Erode',
+  'Kallakurichi',
+  'Kanchipuram',
+  'Kanyakumari',
+  'Karur',
+  'Krishnagiri',
+  'Madurai',
+  'Mayiladuthurai',
+  'Nagapattinam',
+  'Namakkal',
+  'Nilgiris',
+  'Perambalur',
+  'Pudukkottai',
+  'Ramanathapuram',
+  'Ranipet',
+  'Salem',
+  'Sivaganga',
+  'Tenkasi',
+  'Thanjavur',
+  'Theni',
+  'Thoothukudi',
+  'Tiruchirappalli',
+  'Tirunelveli',
+  'Tirupathur',
+  'Tiruppur',
+  'Tiruvallur',
+  'Tiruvannamalai',
+  'Tiruvarur',
+  'Vellore',
+  'Viluppuram',
+  'Virudhunagar',
+];
+
+export const articles: Article[] = [
+  {
+    id: 'marina-cleaner',
+    title: 'Marina Beach Gets Cleaner, Greener with New Initiative',
+    description: 'The Chennai Corporation launches a massive cleanliness and green cover initiative to make Marina Beach more sustainable for everyone.',
+    category: 'Infrastructure',
+    district: 'Chennai',
+    date: 'Nov 20, 2024',
+    image: 'https://images.pexels.com/photos/8572308/pexels-photo-8572308.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 256,
+    comments: 32,
+    views: '44K',
+    author: 'TNV Desk',
+  },
+  {
+    id: 'thanjavur-yield',
+    title: 'Farmers in Thanjavur See Good Yield After Rains',
+    description: 'Recent rains bring relief to farmers in Thanjavur district, with paddy cultivation showing promising results this season.',
+    category: 'Agriculture',
+    district: 'Thanjavur',
+    date: 'Nov 19, 2024',
+    image: 'https://images.pexels.com/photos/6615262/pexels-photo-6615262.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 198,
+    comments: 21,
+    views: '31K',
+    author: 'Kavitha Raj',
+  },
+  {
+    id: 'madurai-festival',
+    title: 'Madurai Meenakshi Temple Prepares for Float Festival',
+    description: 'Temple authorities make final arrangements for the annual float festival, expected to draw thousands of devotees this year.',
+    category: 'Culture',
+    district: 'Madurai',
+    date: 'Nov 18, 2024',
+    image: 'https://images.pexels.com/photos/39341994/pexels-photo-39341994.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 312,
+    comments: 48,
+    views: '38K',
+    author: 'Ravi Shankar',
+  },
+  {
+    id: 'coimbatore-startups',
+    title: 'Coimbatore Startups Power a New Wave of Innovation',
+    description: 'A growing network of founders and makers is putting the western district on India’s technology map.',
+    category: 'Business',
+    district: 'Coimbatore',
+    date: 'Nov 17, 2024',
+    image: 'https://images.pexels.com/photos/10983775/pexels-photo-10983775.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 174,
+    comments: 18,
+    views: '26K',
+    author: 'TNV Business',
+  },
+  {
+    id: 'ooty-tourism',
+    title: 'Nilgiris Tourism Sees Sharp Rise in Visitors',
+    description: 'Cool weather and new nature trails are drawing travellers back to the hills as the holiday season begins.',
+    category: 'Travel',
+    district: 'Nilgiris',
+    date: 'Nov 16, 2024',
+    image: 'https://images.pexels.com/photos/9411142/pexels-photo-9411142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 224,
+    comments: 29,
+    views: '52K',
+    author: 'Meera Iyer',
+  },
+  {
+    id: 'trichy-heritage',
+    title: 'Heritage Walks Bring Tiruchirappalli Stories to Life',
+    description: 'Weekend walking tours are opening up new ways for residents and visitors to discover the city’s living history.',
+    category: 'City Life',
+    district: 'Tiruchirappalli',
+    date: 'Nov 15, 2024',
+    image: 'https://images.pexels.com/photos/37678479/pexels-photo-37678479.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 143,
+    comments: 16,
+    views: '19K',
+    author: 'TNV City',
+  },
+];
+
+export const featuredArticles = [
+  {
+    ...articles[2],
+    title: 'Chennai’s Metro Expansion to Boost Connectivity Across Tamil Nadu',
+    description: 'The Tamil Nadu government announces the next phase of Chennai Metro expansion, connecting key suburban areas and improving commute for lakhs of citizens across the region.',
+    category: 'Politics',
+    district: 'Chennai',
+    date: 'Nov 21, 2024',
+    image: 'https://images.pexels.com/photos/33895627/pexels-photo-33895627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    likes: 482,
+    comments: 64,
+  },
+  {
+    ...articles[4],
+    title: 'Tamil Nadu’s Hills Welcome a New Season of Responsible Travel',
+    description: 'Local communities and travel groups are joining hands to make every visit to the Nilgiris lighter, slower, and more memorable.',
+    category: 'Travel',
+    district: 'Nilgiris',
+    date: 'Nov 20, 2024',
+    likes: 366,
+    comments: 41,
+  },
+  {
+    ...articles[0],
+    title: 'Chennai’s Coastline Gets a Greener, Cleaner Future',
+    description: 'A new city-wide initiative is bringing residents, volunteers, and local businesses together to care for the Marina coastline.',
+    category: 'Infrastructure',
+    district: 'Chennai',
+    date: 'Nov 19, 2024',
+    likes: 301,
+    comments: 37,
+  },
+];
+
+export const popularNews = [
+  { rank: 1, title: 'TN Govt Announces New Industrial Policy 2024', district: 'Chennai', views: '124K', image: articles[1].image },
+  { rank: 2, title: 'Rameswaram Temple Receives Record Footfall', district: 'Ramanathapuram', views: '98K', image: articles[2].image },
+  { rank: 3, title: 'Chennai Metro Phase 2 Work Begins', district: 'Chennai', views: '76K', image: 'https://images.pexels.com/photos/5323956/pexels-photo-5323956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' },
+  { rank: 4, title: 'TN Board SSLC Results Declared Today', district: 'Chennai', views: '64K', image: articles[3].image },
+  { rank: 5, title: 'Nilgiris Tourism Sees Sharp Rise in 2024', district: 'Nilgiris', views: '52K', image: articles[4].image },
+];
